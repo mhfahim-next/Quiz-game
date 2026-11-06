@@ -3,6 +3,7 @@ import { Hind_Siliguri } from "next/font/google";
 import "./globals.css";
 import { ProgressProvider } from "@/components/providers/progress-provider";
 import { AppHeader } from "@/components/layout/app-header";
+import { PwaRegister } from "@/components/layout/pwa-register";
 import { Toaster } from "@/components/ui/sonner";
 
 const hind = Hind_Siliguri({
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
   applicationName: "কুইজ কিডস",
   manifest: "/manifest.webmanifest",
   appleWebApp: { capable: true, title: "কুইজ কিডস", statusBarStyle: "default" },
+  icons: { apple: "/icons/apple-touch-icon.png" },
 };
 
 export const viewport: Viewport = {
@@ -34,6 +36,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <AppHeader />
           <main className="mx-auto w-full max-w-3xl px-4 pb-16 pt-4">{children}</main>
           <Toaster position="top-center" richColors />
+          <PwaRegister />
         </ProgressProvider>
       </body>
     </html>
