@@ -1,0 +1,3 @@
+category_slug,level,text,option1,option2,option3,option4,correct,explanation,image_url
+"animals",1,"🐘 এটি কোন প্রাণী?","হাতি","ঘোড়া","গরু","বাঘ",1,"হাতি অনেক বড় প্রাণী।",
+"math",1,"৭ + ২ = কত?","৮","৯","১০","৬",2,"৭ আর ২ যোগ করলে ৯ হয়।",
